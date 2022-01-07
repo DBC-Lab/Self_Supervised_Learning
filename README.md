@@ -47,7 +47,7 @@ The image preprocessing steps, including skull stripping and extraction of the c
 
 > Dataset
 
->> The datasets in the folder ***Dataset*** are only randomly selected examples for the model training.
+>> The datasets in the folder ***Dataset*** are only randomly selected examples for the model training. Please download them from <https://github.com/YueSun814/SSL-dataset> firstly. 
 
 >> _subject-x-dataset-24m.hdf5_: a dataset for the 24-month-old segmentation model. 
 
@@ -125,6 +125,8 @@ In folder: ***Segmentation_model-24_month***
 
 2. Generate a training dataset (hdf5) for training a 24-month-old segmentation model: the intensity images and corresponding manual labels can be found in folder ***Training_subejcts***. 
 
+    > Some training samples are prepared in the folder _Datasets_.  
+
 3. Training a segmentation model of 24 months old (_SegM-24_).
 
     `nohup ~/Caffe_rc3/build/tools/caffe train -solver solver.prototxt -gpu x >train.txt 2>&1 &     #submit a model training job using gpu x`
@@ -144,6 +146,8 @@ In folder: ***Segmentation_model-24_month***
 In folder: ***Confidence_model***
 
 5. Generate a training dataset (hdf5) for confidence model: computing confidence maps, defined as the differences between the manual labels (in folder ***Training_subejcts***) and the automated segmentations (_step 4_), is regarded as ground truth to train a confidence network. The automated segmentations and corresponding tissue probability maps (_step 4_) are used as inputs. 
+
+    > Some training samples are prepared in the folder _Datasets_. 
 
 6. Training a confidence model (_ConM_).
 
@@ -170,6 +174,8 @@ In folder: ***Confidence_model***
 In folder: ***Segmentation_model-18_month*** 
 
 9. Generate a training dataset (hdf5) for training a 18-month-old segmentation model (Inputs: intensity images and the confidence maps in _step 8_; target: automated segmentations in _step 7_).
+
+    > Some training samples are prepared in the folder _Datasets_. 
 
 10. Training a segmentation model of 18 months old (_SegM-18_).
 
