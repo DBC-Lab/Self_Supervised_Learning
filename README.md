@@ -131,7 +131,7 @@ In folder: ***Segmentation_model-24_month***
 
 2. Generate a training dataset (hdf5) for training a 24-month-old segmentation model: the intensity images and corresponding manual labels can be found in folder ***Training_subejcts***. 
 
-    > Some training samples are prepared in the folder _Datasets_.  
+    > Some training samples are prepared in the folder ***Datasets***.  
 
 3. Training a segmentation model of 24 months old (_SegM-24_).
 
@@ -142,6 +142,9 @@ In folder: ***Segmentation_model-24_month***
     Trained model: SegM_24.caffemodel/SegM_24.solverstate
 
 4. Using _SegM-24_ to derive automated segmentations and probability tissue maps for 24-month-old subjects by performing a 2-fold cross-validation. 
+
+   > Performing histogram matching for testing subjects first with templates (in ***Template***).
+   > The testing subjects in ***Testing_subjects*** have performed histogram matching. 
 
     `python segtissue.py`  
     
