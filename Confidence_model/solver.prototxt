@@ -1,0 +1,41 @@
+# The train/test net protocol buffer definition
+net: "infant_train.prototxt"
+
+# test_iter specifies how many forward passes the test should carry out.
+# In the case of iris, we have test batch size 10 (specified in iris_network.prototxt)
+# and 100 test iterations covering the full 50 test vectors.
+test_iter: 1000
+# Carry out testing every 1000 training iterations.
+test_interval: 1000
+#every time, we extract iter_size number of iters to estimate the gradient,
+#as we cannot use big batchsize, this can make up it.
+iter_size: 3
+
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.005
+momentum: 0.9
+regularization_type: "L2" #actually, it is L2 by default, you can choose L1 as an alternative
+weight_decay: 0.0005
+# The learning rate policy: inv make the learning rate gradually decreases automatically
+#lr_policy: "inv"
+#gamma: 0.0001
+
+#The learning rate policy: step make the learning rate step decrease (*0.1) automatically
+lr_policy: "step"
+gamma: 0.1
+stepsize:5555
+
+#The learning rate policy: fixed makes the learning fixed, but you can use Adam optimizer if you use this lr policy
+#lr_policy: "fixed"
+power: 0.75
+
+display: 100
+# The maximum number of iterations
+max_iter: 1000000 #define it according to your dataset
+# snapshot intermediate results
+snapshot: 1000
+snapshot_prefix: "./"
+# solver mode: CPU or GPU
+#optimizer type: SGD by default.
+#type:"Adam"
+solver_mode: GPU
