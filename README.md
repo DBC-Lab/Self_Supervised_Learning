@@ -194,5 +194,5 @@ In folder: ***Segmentation_model-18_month***
     Expected run time: about 1~2 minutes per subject.
 
 
-## License: *License.txt*
+## License: *LICENSE.txt*
 
