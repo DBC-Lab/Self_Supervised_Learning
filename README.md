@@ -33,27 +33,33 @@ The image preprocessing steps, including skull stripping and extraction of the c
 > Training_subjects
 >> 18 T1w MRIs with corresponding manual labels. 
 
->> _subject-x-T1w.nii.gz_: the T1w MRI. 
+>> ***subject-x-T1w.nii.gz***: the T1w MRI. 
 
->> _subejct-x-label.nii.gz_: the manual label. 
+>> ***subejct-x-label.nii.gz***: the manual label. 
 
 > Testing_subjects
 
 >> The subjects in the folder ***Testing_subjects*** are only randomly selected examples for the model testing.
 
->> _subject-x-T1.hdr_: the T1w MRI. 
+>> ***subject-x-T1.hdr***: the T1w MRI. 
 
->> _subject-x-T2.hdr_: the T2w MRI.  
+>> ***subject-x-T2.hdr***: the T2w MRI.  
+
+> Template
+
+>> ***Template_T1.hdr***: a template for histogram matching of T1w images.
+
+>> ***Template_T2.hdr***: a template for histogram matching of T2w images.
 
 > Dataset
 
 >> The datasets in the folder ***Dataset*** are only randomly selected examples for the model training. Please download them from <https://github.com/YueSun814/SSL-dataset> firstly. 
 
->> _subject-x-dataset-24m.hdf5_: a dataset for the 24-month-old segmentation model. 
+>> ***subject-x-dataset-24m.hdf5***: a dataset for the 24-month-old segmentation model. 
 
->> _subject-x-dataset-18m.hdf5_: a dataset for the 18-month-old segmentation model. 
+>> ***subject-x-dataset-18m.hdf5***: a dataset for the 18-month-old segmentation model. 
 
->> _subject-x-dataset-cp.hdf5_: a dataset for the confidence model. 
+>> ***subject-x-dataset-cp.hdf5***: a dataset for the confidence model. 
 
 > Segmentation_model-24_month 
 >> ***infant_train.prototxt***: the ADU-Net structure with a cross-entropy loss.
