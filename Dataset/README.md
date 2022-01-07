@@ -1,1 +1,1 @@
-## Please download datasets of SSL from: <https://github.com/YueSun814/SSL-dataset/tree/master>
+## Please download training datasets from: <https://github.com/YueSun814/SSL-dataset/tree/master>
