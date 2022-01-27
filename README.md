@@ -111,9 +111,9 @@ The image preprocessing steps, including skull stripping and extraction of the c
     
     b. Add paths of _caffe_lib_, and _caffe_rc3/python_ to your _~/.bashrc_ file. For example, if the folders are saved in the home path, then add the following commands to the _~/.bashrc_ 
    
-   `export LD_LIBRARY_PATH=~/Lib64:$LD_LIBRARY_PATH`
+   `export LD_LIBRARY_PATH=~/caffe_lib:$LD_LIBRARY_PATH`
    
-   `export PYTHONPATH=~/Caffe_rc3/python:$PATH`
+   `export PYTHONPATH=~/caffe_rc3/python:$PATH`
     
     c. Test Caffe 
     
