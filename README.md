@@ -101,7 +101,7 @@ The image preprocessing steps, including skull stripping and extraction of the c
     
     Caffe version 1.0.0-rc3
     
-    To make sure of consistency with our used version (e.g., including 3d convolution, WeightedSoftmaxWithLoss et al.), we strongly recommend installing _Caffe_ using our released ***caffe_rc3***. The installation steps are easy to perform without compilation procedure: 
+    To make sure of consistency with our used version (e.g., including 3d convolution, and WeightedSoftmaxWithLoss, etc.), we strongly recommend installing _Caffe_ using our released ***caffe_rc3***. The installation steps are easy to perform without compilation procedure: 
     
     a. Download ***caffe_rc3*** and ***caffe_lib***.
     
