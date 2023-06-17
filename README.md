@@ -1,4 +1,5 @@
 # Self-Supervised Learning with Application for Infant Cerebellum Segmentation and Analysis
+<a href="https://zenodo.org/badge/latestdoi/445392196"><img src="https://zenodo.org/badge/445392196.svg" alt="DOI"></a>
 ### Little is known about the early cerebellar development during the first two postnatal years, due to the challenging tissue segmentation caused by tightly-folded cortex, extremely low and dynamic tissue contrast, and large inter-site data heterogeneity. In this study, we propose a self-supervised learning (SSL) framework for infant cerebellum segmentation with multi-domain MR images.
 
 <img src="https://github.com/YueSun814/Img-folder/blob/main/Github_framework.jpg" width="100%">
